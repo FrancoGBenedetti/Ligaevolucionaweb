@@ -2,12 +2,9 @@
   font-family: 'Montserrat', sans-serif;
 }
 
-.head {
-  height: 120px;
-}
-
 .head img {
   width: 180px;
+  padding: 10px;
 }
 
 .navbar-default {
@@ -32,7 +29,6 @@
 }
 
 .carousel-control.right {
-  right: 131px !important;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, transparent 100%) !important;
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, transparent 100%) !important;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(transparent)) !important;
@@ -40,38 +36,45 @@
 }
 
 .carousel-control.left {
-  left: 15px !important;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, transparent 100%) !important;
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, transparent 100%) !important;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(transparent)) !important;
   background-image: linear-gradient(to right, rgba(0, 0, 0, 0.0001) 0, transparent 100%) !important;
 }
 
-.carousel-inner {
-  width: 90%;
-}
-
 .carousel-slide {
   margin: 0px auto;
+}
+
+.section-a .cup .cup-content {
+  margin-top: 50px;
+}
+
+.section-a .cup .cup-content p {
+  display: inline-block;
+  font-size: 20px;
+  font-weight: bold;
+  color: white;
+}
+
+.section-a .cup .cup-content figure {
+  display: inline-block;
+}
+
+.section-a .cup .cup-content figure img {
+  width: 30px;
+  transition: width 0.5s linear 0.2s;
+}
+
+.section-a .cup .cup-content figure img:hover {
+  width: 40px;
 }
 
 .section-a .content-a {
   background-color: rgba(156, 156, 156, 0.4);
   padding: 20px;
   border-radius: 5px;
-}
-
-.section-a .content-a figure {
-  display: inline-block;
-}
-
-.section-a .content-a figure img {
-  width: 60px;
-  transition: width 0.5s linear 0.2s;
-}
-
-.section-a .content-a figure img:hover {
-  width: 80px;
+  margin-top: 10px;
 }
 
 .section-a .content-a p {
