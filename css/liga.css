@@ -5,6 +5,11 @@
 .head img {
   width: 180px;
   padding: 10px;
+  transition: width 0.8s linear 0.2s;
+}
+
+.head img:hover {
+  width: 200px;
 }
 
 .navbar-default {
