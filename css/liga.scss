@@ -16,6 +16,32 @@
 		width: 200px;
 
 	}
+	.bases-container{
+		text-align: right;
+	}
+	.btn-bases{
+		
+		
+		background: #17AFDE;
+		
+		display: inline-block;
+		margin-top: 10px;
+		border-radius: 4px;
+		
+
+		p{
+			color: white;
+			text-align: center;
+			font-weight: bold;
+			font-size: 14px;
+			padding: 10px;
+			margin-top: 5px
+		}
+	}
+	.btn-bases:hover{
+		background: #16708C;
+
+	}
 	
 	
 }
@@ -120,12 +146,17 @@
 			color: white;
 			font-weight: bold;
 			margin-left: 30px;
-			span{
+			#red-text{
 				color: red;
 				font-size: 50px;
 				margin-left: 30px;
 				vertical-align: middle;
 
+			}
+			#sub-text{
+				font-size: 20px;
+				font-weight: lighter;
+				color: orange;
 			}
 		}
 	}

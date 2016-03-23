@@ -12,6 +12,30 @@
   width: 200px;
 }
 
+.head .bases-container {
+  text-align: right;
+}
+
+.head .btn-bases {
+  background: #17AFDE;
+  display: inline-block;
+  margin-top: 10px;
+  border-radius: 4px;
+}
+
+.head .btn-bases p {
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  font-size: 14px;
+  padding: 10px;
+  margin-top: 5px;
+}
+
+.head .btn-bases:hover {
+  background: #16708C;
+}
+
 .navbar-default {
   background-color: rgba(200, 200, 200, 0) !important;
   border: 0px;
@@ -90,11 +114,17 @@
   margin-left: 30px;
 }
 
-.section-a .content-a p span {
+.section-a .content-a p #red-text {
   color: red;
   font-size: 50px;
   margin-left: 30px;
   vertical-align: middle;
+}
+
+.section-a .content-a p #sub-text {
+  font-size: 20px;
+  font-weight: lighter;
+  color: orange;
 }
 
 @media (max-width: 767px) {
