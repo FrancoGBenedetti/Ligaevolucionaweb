@@ -2,14 +2,19 @@
   font-family: 'Montserrat', sans-serif;
 }
 
+body {
+  background-color: #FF0033;
+}
+
 .head img {
-  width: 180px;
+  width: 240px;
   padding: 10px;
+  padding-top: 20px;
   transition: width 0.8s linear 0.2s;
 }
 
 .head img:hover {
-  width: 200px;
+  width: 280px;
 }
 
 .head .bases-container {
@@ -17,23 +22,21 @@
 }
 
 .head .btn-bases {
-  background: #17AFDE;
+  background: #212121;
   display: inline-block;
   margin-top: 10px;
-  border: 2px solid orange;
+  width: 120px;
 }
 
 .head .btn-bases p {
   color: white;
   text-align: center;
-  font-weight: bold;
   font-size: 14px;
-  padding: 10px;
   margin-top: 5px;
 }
 
 .head .btn-bases:hover {
-  background: #16708C;
+  background: #FFA500;
 }
 
 .navbar-default {
