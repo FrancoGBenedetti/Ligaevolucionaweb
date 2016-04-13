@@ -13,7 +13,7 @@
   		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
   		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
 
-
+		<link rel="stylesheet" type="text/css" href="css/liga.css">
 		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
 		<link rel="stylesheet" type="text/css" href="css/liga.css">
 		<link rel="stylesheet" type="text/css" href="css/sticky-footer.css">
@@ -36,7 +36,7 @@
 		<div class="row">
 			<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
 				
-					<a href="index.html"><img src="img/logo2.png"></a>
+					<a href="index.html"><img src="img/logo3.png"></a>
 				
 				
 			</div>
@@ -75,8 +75,11 @@
 		        <li><a href="#">Liga Evoluciona</a></li>
 		        <li><a href="premios.html">Información</a></li>
 		        
-		        <li><a href="#">Bases</a></li>
-		        <li><a href="#">Contáctanos</a></li>
+
+		        
+		        <li><a href="formulario_contacto.html">Contáctanos</a></li>
+
+
 		        <!--<li class="dropdown">
 		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
 		          <ul class="dropdown-menu">
@@ -93,40 +96,64 @@
 		</nav>
 	
 	</header>
-	<section>
-	<div id="formulario">
-   <form role="form" action="php/contacto.php" method="POST" id="contacto" title="Nombre">
-   <label for="nombre">Nombre</label>
-   <input name="nombre" type="text" required="required" id="nombre" placeholder="nombre" tabindex="1" title="Nombre">
-   <br>
-   <label for="email">Email</label>
-   <input name="email" type="email" required="required" id="email" placeholder="email" tabindex="2" title="Email">
-   <br>
-   <label for="ciudad">Asunto</label>
-   <input name="asunto" type="text" id="asunto" placeholder="asunto" tabindex="4" title="Asunto">
-   <br>
-   <label for="Mensaje">Mensaje</label>
-   <textarea name="mensaje" rows="4" id="mensaje" placeholder="mensaje" tabindex="6"></textarea>
-   <br>
-   <input type="submit" name="enviar" tabindex="7" value="Enviar"><input type="reset" tabindex="8" value="Borrar">
-   <input type="hidden" name="estado" value="1">
-   </form>
-  </div>
+	
+	<div class="container" id="formulario">
+	   <div class="row">
+		   	<form role="form" action="php/contacto.php" method="POST" id="contacto" title="Nombre">
+			   <label for="nombre">Nombre</label>
+			   <input name="nombre" type="text" required="required" id="nombre" placeholder="..." tabindex="1" title="Nombre">
+			   <br>
+			   <label for="email">Email</label>
+			   <input name="email" type="email" required="required" id="email" placeholder="..." tabindex="2" title="Email">
+			   <br>
+			   <label for="ciudad">Asunto</label>
+			   <input name="asunto" type="text" id="asunto" placeholder="..." tabindex="4" title="Asunto">
+			   <br>
+			   <label for="Mensaje">Mensaje</label>
+			   <textarea name="mensaje" rows="4" id="mensaje" placeholder="..." tabindex="6"></textarea>
+			   <br>
+			   <input type="submit" name="Enviar" tabindex="7" value="Enviar">
+			   
+			   <input type="hidden" name="estado" value="1">
+		   </form>
+	   	
+	   </div>
+  	</div>
 
-	</section>
+	
 
-
-	<footer class="container-fluid footer" style="width:100%;">
+	<footer class="container footer" style="width:100%;">
 	    <div class="row">
-	      <div class="col-md-12"> 
-	        <img class="footer-logo" src="img/logo2.png" alt="Delta G">
-	        <span class="footer-content">&copy; 2016 LigaEvoluciona Todos los derechos reservados.</span>
-	        <span class=" footer-social">       
-	          <a href="https://www.facebook.com/dgequipments/"><i class="fa fa-facebook-square fa-3x"></i></a>&nbsp;&nbsp;
-	          <a href="http://www.twitter.com/"><i class="fa fa-twitter-square fa-3x"></i></a>&nbsp;&nbsp;
-	        </span>
-	      </div>
-	    </div>
+	    	<div class="col-md-3 col-md-offset-2 foot-items">
+	    		<span id="foot-titles">Liga Evoluciona</span>
+	    			<p>Bases Oficiales</p>
+	    		<span id="foot-titles">Redes Sociales</span>
+	    		<ul>
+	    			<li>Facebook</li>
+	    			<li>Twitter</li>
+	    			<li>Instagram</li>
+	    		</ul>
+	    	</div>
+	    	<div class="col-md-3 foot-items">
+	    		<span id="foot-titles">Liga Evoluciona</span>
+	    			<p>Bases Oficiales</p>
+	    		<span id="foot-titles">Redes Sociales</span>
+	    		<ul>
+	    			<li>Facebook</li>
+	    			<li>Twitter</li>
+	    			<li>Instagram</li>
+	    		</ul>
+	    	</div>
+	    	<div class="col-md-3 foot-items">
+	    		
+	    		<span id="foot-titles">Contacto</span>
+	    		<ul>
+	    			<li>Cualquier consulta no dudes en escribirnos a contacto@ligaevoluciona.cl</li>
+	    			
+	    		</ul>
+	    	</div>
+	    	
+	      
 	</footer>
 
 

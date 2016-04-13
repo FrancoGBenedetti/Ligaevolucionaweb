@@ -130,6 +130,64 @@ body {
   color: orange;
 }
 
+label {
+  width: 100%;
+  padding: 4px;
+  color: orange !important;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+textarea {
+  width: 100%;
+  padding: 4px;
+  margin: 5px 5px;
+  background-color: rgba(156, 156, 156, 0.4) !important;
+  border: 0px !important;
+}
+
+input {
+  width: 100%;
+  padding: 4px;
+  margin: 5px 5px;
+  background-color: transparent !important;
+  border: 0px !important;
+  border-bottom: 2px solid orange !important;
+}
+
+input[type="submit"] {
+  background-color: rgba(156, 156, 156, 0.4) !important;
+  border-bottom: 0px !important;
+  color: white;
+  margin-top: 10px;
+}
+
+::-webkit-input-placeholder {
+  color: white;
+}
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: white;
+}
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: white;
+}
+
+:-ms-input-placeholder {
+  color: white;
+}
+
+#formulario {
+  width: 400px;
+  margin: 0 auto;
+  padding: 10px 30px;
+  border-radius: 6px;
+  border: thin #C1C1C1;
+}
+
 @media (max-width: 767px) {
   .navbar-default .bg-nav .navbar-right li {
     z-index: 10 !important;
