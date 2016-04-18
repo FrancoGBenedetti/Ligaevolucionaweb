@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html>
+<head>
+		<title> ligaevoluciona </title>
+		<meta charset=" UTF-8 "/>
+		<meta name="description" content="255 caracteres"/>
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		<link href="css/bootstrap.min.css" rel="stylesheet">
+  		<link href="css/estilos.css" rel="stylesheet">
+  		<script type="text/javascript" src="js/bootstrap.min.js"</script>
+
+
+  		<script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+  		<script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+
+
+		<link href='https://fonts.googleapis.com/css?family=Montserrat:400,700' rel='stylesheet' type='text/css'>
+		<link rel="stylesheet" type="text/css" href="css/liga.css">
+		<link rel="stylesheet" type="text/css" href="css/sticky-footer.css">
+		<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+	    <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+
+	   
+
+
+
+</head>
+<body background="img/fieldbg.jpg">
+
+
+
+	
+
+	<div class="container head">
+		<div class="row">
+			<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6">
+				
+					<a href="index.html"><img src="img/logo2.png"></a>
+				
+				
+			</div>
+			<div class="col-lg-6 col-md-6 col-xs-12 col-sm-6 bases-container">
+				<a href="pdf/bases.pdf">
+					<div class="btn-bases">
+						<p>Bases <i class="fa fa-arrow-circle-o-down"></i></p>
+					</div>
+				</a>
+			</div>
+			
+			
+		</div>
+	</div>
+
+	<header>
+	
+		<nav class="navbar navbar-default">
+		  <div class="container bg-nav">
+		    
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+		        <span class="sr-only">Toggle navigation</span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="#"><img src=""></a>
+		    </div>
+
+		    
+		    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+		     
+		     
+		      <ul class="nav navbar-nav navbar-right">
+		        <li><a href="#">Liga Evoluciona</a></li>
+		        <li><a href="premios.html">Información</a></li>
+		        
+		        <li><a href="#">Bases</a></li>
+		        <li><a href="#">Contáctanos</a></li>
+		        <!--<li class="dropdown">
+		          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Dropdown <span class="caret"></span></a>
+		          <ul class="dropdown-menu">
+		            <li><a href="#">Action</a></li>
+		            <li><a href="#">Another action</a></li>
+		            <li><a href="#">Something else here</a></li>
+		            <li role="separator" class="divider"></li>
+		            <li><a href="#">Separated link</a></li>
+		          </ul>
+		        </li>-->
+		      </ul>
+		    </div>
+		  </div>
+		</nav>
+	
+	</header>
+	<section>
+	<div id="formulario">
+   <form role="form" action="php/contacto.php" method="POST" id="contacto" title="Nombre">
+   <label for="nombre">Nombre</label>
+   <input name="nombre" type="text" required="required" id="nombre" placeholder="nombre" tabindex="1" title="Nombre">
+   <br>
+   <label for="email">Email</label>
+   <input name="email" type="email" required="required" id="email" placeholder="email" tabindex="2" title="Email">
+   <br>
+   <label for="ciudad">Asunto</label>
+   <input name="asunto" type="text" id="asunto" placeholder="asunto" tabindex="4" title="Asunto">
+   <br>
+   <label for="Mensaje">Mensaje</label>
+   <textarea name="mensaje" rows="4" id="mensaje" placeholder="mensaje" tabindex="6"></textarea>
+   <br>
+   <input type="submit" name="enviar" tabindex="7" value="Enviar"><input type="reset" tabindex="8" value="Borrar">
+   <input type="hidden" name="estado" value="1">
+   </form>
+  </div>
+
+	</section>
+
+
+	<footer class="container-fluid footer" style="width:100%;">
+	    <div class="row">
+	      <div class="col-md-12"> 
+	        <img class="footer-logo" src="img/logo2.png" alt="Delta G">
+	        <span class="footer-content">&copy; 2016 LigaEvoluciona Todos los derechos reservados.</span>
+	        <span class=" footer-social">       
+	          <a href="https://www.facebook.com/dgequipments/"><i class="fa fa-facebook-square fa-3x"></i></a>&nbsp;&nbsp;
+	          <a href="http://www.twitter.com/"><i class="fa fa-twitter-square fa-3x"></i></a>&nbsp;&nbsp;
+	        </span>
+	      </div>
+	    </div>
+	</footer>
+
+
+	<script src="http://code.jquery.com/jquery-2.1.1.min.js"></script>
+  	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+
+
+</body>
+
+
+</html>
