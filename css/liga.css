@@ -146,6 +146,14 @@ textarea {
   border: 0px !important;
 }
 
+textarea:focus {
+  color: white;
+}
+
+textarea:enabled {
+  color: white;
+}
+
 input {
   width: 100%;
   padding: 4px;
@@ -160,6 +168,14 @@ input[type="submit"] {
   border-bottom: 0px !important;
   color: white;
   margin-top: 10px;
+}
+
+input:focus {
+  color: white;
+}
+
+input:enabled {
+  color: white;
 }
 
 ::-webkit-input-placeholder {
