@@ -7,9 +7,9 @@ if (@!$_SESSION['user']) {
 }
 ?>
 <?php
-  include('_setup.php');
+  include("conexion.php");
   $consulta = "SELECT IDGALERIA, TITULO, DESCRIPCION FROM tabla_imagen";
-  $filas = mysqli_query($cnx, $consulta);
+  $filas = mysqli_query($conexion, $consulta);
 
 ?>
 
@@ -50,12 +50,16 @@ include("include/menu.php");
 
 ?>
 <!-- ======================================================================================================================== -->
-<!--<?php
-  include('_setup.php');
+<!--
+
+<?php
+/*
+  include("conexion.php");
   $consulta = "SELECT IDGALERIA, TITULO, DESCRIPCION FROM tabla_imagen";
   $filas = mysqli_query($cnx, $consulta);
-
+*/
 ?>
+
 -->
 
 <h1>EQUIPOS</h1>
@@ -73,8 +77,9 @@ include("include/menu.php");
     echo "<tr>";
     echo "<td>$columna[TITULO]</td>";
     echo "<td>$columna[DESCRIPCION]</td>";
-    echo "<td><a href='editar_equipo.php?id=$columna[IDGALERIA]'>editar</a> | <a href='borrar_equipo.php?id=$columna[IDGALERIA]'>borrar</a> | <a href='administrar_equipo.php?id=$columna[IDGALERIA]'>administrar equipo</a></td>";
+    echo "<td><a href='administrar_equipo.php?id=$columna[IDGALERIA]'>administrar equipo</a></td>";
     echo "</tr>";
+    
 
   }
 

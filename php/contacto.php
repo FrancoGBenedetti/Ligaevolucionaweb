@@ -1,6 +1,6 @@
 <?php
 //Comprobamos que se haya presionado el boton enviar
-if(isset($_POST['enviar'])){
+if(isset($_POST['Enviar'])){
 //Guardamos en variables los datos enviados
 $nombre = $_POST['nombre'];
 $email = $_POST['email'];

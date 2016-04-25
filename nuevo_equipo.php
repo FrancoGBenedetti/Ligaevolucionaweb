@@ -1,3 +1,9 @@
+<?php
+session_start();
+if (@!$_SESSION['user']) {
+	header("Location:index1.php");
+}
+?>
 <!DOCTYPE html>
 <html lang="es">
 <head>
@@ -19,8 +25,11 @@
 		<label>Descripcion</label>
 		<textarea name="descripcion" cols="90" rows="5"></textarea>
 		<input type="submit">
-		
 	</form>
+	 
+	 
 	
 </body>
 </html>
+
+
