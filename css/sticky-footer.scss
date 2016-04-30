@@ -14,10 +14,10 @@ body {
   left:0;
   right: 0;
   /* Set the fixed height of the footer here */
-  height: 300px;
+  height: 200px;
 
   
-  background-color: #141414;
+  background-color: #070707;
   
 
   padding: 24px 32px;
@@ -32,11 +32,22 @@ body {
   p{
     color: #868686;
   }
+  a{
+    text-decoration: none;
+  }
+  a:hover{
+    padding: 5px;
+    border-bottom: 2px solid orange;
+  }
   ul{
     padding-left: 0px;
     li{
      color: #868686;
      list-style: none;
+     .foot-facebook{
+      font-size: 20px;
+      margin-top: 5px;
+     }
     }
   }
 }

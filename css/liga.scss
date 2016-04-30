@@ -1,7 +1,12 @@
 
+$redcolor: #DF2C41;
+
+
 *{
 	font-family: 'Montserrat', sans-serif;
+
 }
+
 
 body{
 	background-color: #FF0033;
@@ -27,27 +32,78 @@ body{
 	.btn-bases{
 		
 		
-		background: #212121;
+		background: #5B5B5B;
 		
 		display: inline-block;
 		margin-top: 10px;
 		//border-radius: 4px;
 		
-		width: 120px;
+		width: 150px;
+		
+
+		p{
+			color: #FFA500;
+			text-align: center;
+			font-weight: bold;
+			font-size: 12px;
+			font-style: italic;
+			margin: 5px 0px 5px 0px;
+		}
+	}
+	.btn-bases:hover{
+		background: #DF2C41;
+		-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+		-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+		box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+		p{
+			color: white;
+		}
+		
+
+	}
+	.btn-inscripcion{
+		background: #DF2C41;
+		
+		display: inline-block;
+		margin-top: 10px;
+		//border-radius: 4px;
+		
+		width: 190px;
+
 		
 
 		p{
 			color: white;
 			text-align: center;
-			
-			font-size: 14px;
-			
-			margin-top: 5px
+			font-style: italic;
+			font-size: 12px;
+			font-weight: bold;
+			margin: 5px 0px 5px 0px;
+			i{margin-right: 5px;}
 		}
+		.btn-inscripcion{
+			-webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+		-moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+		box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+		}
+
 	}
-	.btn-bases:hover{
-		background: #FFA500;
+	a.social-link{
+		color: white !important;
+	}
+	.social-top{
+		width: 35px;
+		text-align: center;
+		margin-top: 10px;
+		display: inline-block;
+		background-color: #334C8E;
+		padding: 3px 0px 4px 0px;
 		
+		.fa-facebook-official{
+			font-size: 20px;
+			color: white !important;
+			
+		}
 
 	}
 	
@@ -80,7 +136,7 @@ body{
 			
 		}
 		li:hover{
-			border-bottom: 3px solid orange;
+			border-bottom: 3px solid $redcolor;
 		}
 	}
 }
@@ -170,6 +226,22 @@ body{
 		}
 	}
 }
+.auspiciadores{
+	margin-top: 30px;
+	background-color: rgba(156,156,156,0.4);
+	padding: 20px;
+	border: 7px solid white;
+	.logo-auspicios{
+		margin-left: 20px;
+	}
+	figure{
+		text-align: center;
+		
+		img{
+			width: 170px;
+		}
+	}
+}
 
 
 label {
@@ -239,6 +311,14 @@ input:enabled{
 	padding: 10px 30px;
 	border-radius: 6px;
 	border:thin #C1C1C1;
+}
+
+
+
+.tit{
+	h2{
+		color: orange !important;
+	}
 }
 
 

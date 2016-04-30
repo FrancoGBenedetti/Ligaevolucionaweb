@@ -22,21 +22,74 @@ body {
 }
 
 .head .btn-bases {
-  background: #212121;
+  background: #5B5B5B;
   display: inline-block;
   margin-top: 10px;
-  width: 120px;
+  width: 150px;
 }
 
 .head .btn-bases p {
-  color: white;
+  color: #FFA500;
   text-align: center;
-  font-size: 14px;
-  margin-top: 5px;
+  font-weight: bold;
+  font-size: 12px;
+  font-style: italic;
+  margin: 5px 0px 5px 0px;
 }
 
 .head .btn-bases:hover {
-  background: #FFA500;
+  background: #DF2C41;
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.head .btn-bases:hover p {
+  color: white;
+}
+
+.head .btn-inscripcion {
+  background: #DF2C41;
+  display: inline-block;
+  margin-top: 10px;
+  width: 190px;
+}
+
+.head .btn-inscripcion p {
+  color: white;
+  text-align: center;
+  font-style: italic;
+  font-size: 12px;
+  font-weight: bold;
+  margin: 5px 0px 5px 0px;
+}
+
+.head .btn-inscripcion p i {
+  margin-right: 5px;
+}
+
+.head .btn-inscripcion .btn-inscripcion {
+  -webkit-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  -moz-box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 2px 1px 2px rgba(0, 0, 0, 0.5);
+}
+
+.head a.social-link {
+  color: white !important;
+}
+
+.head .social-top {
+  width: 35px;
+  text-align: center;
+  margin-top: 10px;
+  display: inline-block;
+  background-color: #334C8E;
+  padding: 3px 0px 4px 0px;
+}
+
+.head .social-top .fa-facebook-official {
+  font-size: 20px;
+  color: white !important;
 }
 
 .navbar-default {
@@ -53,7 +106,7 @@ body {
 }
 
 .navbar-default ul li:hover {
-  border-bottom: 3px solid orange;
+  border-bottom: 3px solid #DF2C41;
 }
 
 .navbar {
@@ -130,6 +183,25 @@ body {
   color: orange;
 }
 
+.auspiciadores {
+  margin-top: 30px;
+  background-color: rgba(156, 156, 156, 0.4);
+  padding: 20px;
+  border: 7px solid white;
+}
+
+.auspiciadores .logo-auspicios {
+  margin-left: 20px;
+}
+
+.auspiciadores figure {
+  text-align: center;
+}
+
+.auspiciadores figure img {
+  width: 170px;
+}
+
 label {
   width: 100%;
   padding: 4px;
@@ -202,6 +274,10 @@ input:enabled {
   padding: 10px 30px;
   border-radius: 6px;
   border: thin #C1C1C1;
+}
+
+.tit h2 {
+  color: orange !important;
 }
 
 @media (max-width: 767px) {
