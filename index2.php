@@ -8,7 +8,7 @@ if (@!$_SESSION['user']) {
 ?>
 <?php
   include("conexion.php");
-  $consulta = "SELECT IDGALERIA, TITULO, DESCRIPCION FROM tabla_imagen";
+  $consulta = "SELECT IDGALERIA, TITULO, DESCRIPCION, LOGO FROM tabla_imagen";
   $filas = mysqli_query($conexion, $consulta);
 
 ?>
@@ -70,17 +70,27 @@ include("include/menu.php");
   <tr>
     <th>Nombre de EQuipo</th>
     <th>Descripcion</th>
+    <th>Logo</th>
     <th>Botones accion</th>
   </tr>
   <?php
+  $id = $_GET['id'];
+
   while( $columna = mysqli_fetch_assoc( $filas)){
-    echo "<tr>";
+    ?>
+    <tr>
+    <td><?php echo $columna['TITULO'];?></td>
+    <td><?php echo $columna['DESCRIPCION'];?></td>
+    <td><img height="100" width="100" src="data:image/jpg;base64,<?php echo base64_encode($columna['LOGO']); ?>" ></td>
+    <td><a href='administrar_equipo.php?id=<?php echo $columna['IDGALERIA'];?>'>administrar equipo</a></td>
+    </tr>
+    <!--/* echo "<tr>";
     echo "<td>$columna[TITULO]</td>";
     echo "<td>$columna[DESCRIPCION]</td>";
-    echo "<td><a href='administrar_equipo.php?id=$columna[IDGALERIA]'>administrar equipo</a></td>";
-    echo "</tr>";
+    echo "<td><a href='editar_equipo.php?id=$columna[IDGALERIA]'>editar</a> | <a href='borrar_equipo.php?id=$columna[IDGALERIA]'>borrar</a> | <a href='administrar_equipo.php?id=$columna[IDGALERIA]'>administrar equipo</a></td>";
+    echo "</tr>"*/;-->
     
-
+  <?php
   }
 
   ?>
