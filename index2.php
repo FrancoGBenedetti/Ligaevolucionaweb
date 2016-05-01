@@ -30,17 +30,48 @@ if (@!$_SESSION['user']) {
     <link rel="apple-touch-icon-precomposed" href="assets/ico/apple-touch-icon-57-precomposed.png">
     <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
-	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css"
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+  <link rel="stylesheet" type="text/css" href="css/liga.css">
+  <link rel="stylesheet" type="text/css" href="css/sticky-footer.css">
   </head>
 <body data-offset="40" background="images/fondotot.jpg" style="background-attachment: fixed">
+
+
+
+
+
+
+
+
+
+
+
+
 <div class="container">
 <header class="header">
-<div class="row">
-	<?php
-	include("include/cabecera.php");
-	?>
-</div>
+
+
+
+
+
+
+
+
+  <div class="row">
+  	<?php
+  	include("include/cabecera.php");
+  	?>
+  </div>
 </header>
+
+
+
+
+
+
+
+
+
 
   <!-- Navbar
     ================================================== -->
