@@ -104,10 +104,10 @@
 
 	<center>
 	<div class="tit" style="padding: 50px 20px 50px 20px;">
-		<h2 style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">INICIO DE SESIÓN</h2>
+		<h2 style="font-size: 20px; color: orange; font-weight: bold; font-family: 'Montserrat', sans-serif;">INICIO DE SESIÓN</h2>
 		<center><div class="Ingreso">
 
-	<table border="0" align="center" valign="middle">
+	<table border="0" width="300" valign="middle">
 		<tr>
 		<td rowspan=2>
 		<form action="validar.php" method="post">
@@ -119,14 +119,14 @@
 			
 		</tr>
 		<tr>
-			<td width=80> <input class="form-group has-success" style="" type="text" name="mail"></td>
+			<td width=300> <input class="form-group has-success" style="" type="text" name="mail"></td>
 		</tr>
 		<tr>
 			<td><label  style="font-size: 12pt; margin-right: 5px; color: orange; font-family: 'Montserrat', sans-serif;"><b>Contraseña: </b></label></td>
 			
 		</tr>
 		<tr>
-			<td witdh=80><input style="" type="password" name="pass"></td>
+			<td witdh=300><input style="" type="password" name="pass"></td>
 		</tr>
 		<tr>
 			<td width=80 align=center><input style="margin-top: 10px; border-radius: 3px !important;" class="btn btn-primary" type="submit" value="Aceptar"></td>
