@@ -20,7 +20,7 @@
 </head>
 <body background="img/fieldbg.jpg">
 	
-	<div class="container crear-equipos">
+	<div class="container margin-t">
 		<div class="row">
 			<div class="col-md-4 col-md-offset-4">
 				<form method="post" action="guardar_equipo.php" enctype="multipart/form-data">

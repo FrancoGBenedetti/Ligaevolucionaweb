@@ -285,8 +285,17 @@ input:enabled {
   color: orange !important;
 }
 
-.crear-equipos {
-  margin-top: 200px;
+.margin-t {
+  margin-top: 150px;
+  margin-bottom: 100px;
+}
+
+.admin-team tr th {
+  padding: 10px;
+  margin: 5px !important;
+  color: orange;
+  font-size: 14px;
+  border-bottom: 2px solid orange;
 }
 
 @media (max-width: 767px) {
