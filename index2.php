@@ -34,7 +34,7 @@ if (@!$_SESSION['user']) {
   <link rel="stylesheet" type="text/css" href="css/liga.css">
   <link rel="stylesheet" type="text/css" href="css/sticky-footer.css">
   </head>
-<body data-offset="40" background="images/fondotot.jpg" style="background-attachment: fixed">
+<body background="img/fieldbg.jpg" style="background-attachment: fixed"">
 
 
 
@@ -48,99 +48,92 @@ if (@!$_SESSION['user']) {
 
 
 <div class="container">
-<header class="header">
-
-
-
-
-
-
-
-
   <div class="row">
-  	<?php
-  	include("include/cabecera.php");
-  	?>
+    <div class="col-md-4 col-md-offset-4">
+      <header class="header">
+
+
+
+
+
+
+
+
+        <div class="row">
+        	<?php
+        	include("include/cabecera.php");
+        	?>
+        </div>
+      </header>
+
+
+
+
+
+
+
+
+
+
+        <!-- Navbar
+          ================================================== -->
+      <?php
+
+      include("include/menu.php");
+
+      ?>
+      <!-- ======================================================================================================================== -->
+      <!--
+
+      <?php
+      /*
+        include("conexion.php");
+        $consulta = "SELECT IDGALERIA, TITULO, DESCRIPCION FROM tabla_imagen";
+        $filas = mysqli_query($cnx, $consulta);
+      */
+      ?>
+
+      -->
+
+      <h1 style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">EQUIPOS</h1>
+      <h2 style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">LISTADO DE EQUIPOS</h2>
+
+      <div><a href="nuevo_equipo.php" style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">NUEVO EQUIPO</a></div>
+      <table border="1">
+        <tr>
+          <th style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">Nombre de EQuipo</th>
+          <th style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">Descripcion</th>
+          <th style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">Logo</th>
+          <th style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">Botones accion</th>
+        </tr>
+        <?php
+        $id = $_GET['id'];
+
+        while( $columna = mysqli_fetch_assoc( $filas)){
+          ?>
+          <tr>
+          <td style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif; background-color: rgba(156, 156, 156, 0.4) !important;"><?php echo $columna['TITULO'];?></td>
+          <td style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif; background-color: rgba(156, 156, 156, 0.4) !important;"><?php echo $columna['DESCRIPCION'];?></td>
+          <td style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif; background-color: rgba(156, 156, 156, 0.4) !important;"><img height="100" width="100" src="data:image/jpg;base64,<?php echo base64_encode($columna['LOGO']); ?>" ></td>
+          <td style="font-size: 14px; color: orange !important; font-family: 'Montserrat', sans-serif; background-color: rgba(156, 156, 156, 0.4) !important;"><a style="font-size: 14px; color: orange !important;"href='administrar_equipo.php?id=<?php echo $columna['IDGALERIA'];?>'>administrar equipo</a></td>
+          </tr>
+
+          
+        <?php
+        }
+
+        ?>
+        
+      </table>
+
+
+
+
+
+
+      
+    </div>
   </div>
-</header>
-
-
-
-
-
-
-
-
-
-
-  <!-- Navbar
-    ================================================== -->
-<?php
-
-include("include/menu.php");
-
-?>
-<!-- ======================================================================================================================== -->
-<!--
-
-<?php
-/*
-  include("conexion.php");
-  $consulta = "SELECT IDGALERIA, TITULO, DESCRIPCION FROM tabla_imagen";
-  $filas = mysqli_query($cnx, $consulta);
-*/
-?>
-
--->
-
-<h1>EQUIPOS</h1>
-<h2>LISTADO DE EQUIPOS</h2>
-
-<div><a href="nuevo_equipo.php">NUEVO EQUIPO</a></div>
-<table border="1">
-  <tr>
-    <th>Nombre de EQuipo</th>
-    <th>Descripcion</th>
-    <th>Logo</th>
-    <th>Botones accion</th>
-  </tr>
-  <?php
-  $id = $_GET['id'];
-
-  while( $columna = mysqli_fetch_assoc( $filas)){
-    ?>
-    <tr>
-    <td><?php echo $columna['TITULO'];?></td>
-    <td><?php echo $columna['DESCRIPCION'];?></td>
-    <td><img height="100" width="100" src="data:image/jpg;base64,<?php echo base64_encode($columna['LOGO']); ?>" ></td>
-    <td><a href='administrar_equipo.php?id=<?php echo $columna['IDGALERIA'];?>'>administrar equipo</a></td>
-    </tr>
-    <!--/* echo "<tr>";
-    echo "<td>$columna[TITULO]</td>";
-    echo "<td>$columna[DESCRIPCION]</td>";
-    echo "<td><a href='editar_equipo.php?id=$columna[IDGALERIA]'>editar</a> | <a href='borrar_equipo.php?id=$columna[IDGALERIA]'>borrar</a> | <a href='administrar_equipo.php?id=$columna[IDGALERIA]'>administrar equipo</a></td>";
-    echo "</tr>"*/;-->
-    
-  <?php
-  }
-
-  ?>
-  
-</table>
-
-
-
-
-
-
-<!-- Footer
-      ================================================== -->
-<hr class="soften"/>
-<footer class="footer">
-
-<hr class="soften"/>
-<p> <br/><br/></p>
- </footer>
 </div><!-- /container -->
     <script src="bootstrap/js/jquery-1.8.3.min.js"></script>
     <script src="bootstrap/js/bootstrap.min.js"></script>
