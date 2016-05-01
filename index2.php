@@ -39,6 +39,11 @@ if (@!$_SESSION['user']) {
 
 
 
+        <?php
+
+          include("include/menu.php");
+
+        ?>
 
 
 
@@ -59,11 +64,7 @@ if (@!$_SESSION['user']) {
 
 
 
-        <div class="row">
-        	<?php
-        	include("include/cabecera.php");
-        	?>
-        </div>
+ 
       </header>
 
 
@@ -77,11 +78,7 @@ if (@!$_SESSION['user']) {
 
         <!-- Navbar
           ================================================== -->
-      <?php
 
-      include("include/menu.php");
-
-      ?>
       <!-- ======================================================================================================================== -->
       <!--
 
@@ -95,7 +92,7 @@ if (@!$_SESSION['user']) {
 
       -->
 
-      <h1 style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">EQUIPOS</h1>
+      
       <h2 style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">LISTADO DE EQUIPOS</h2>
 
       <div><a href="nuevo_equipo.php" style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">NUEVO EQUIPO</a></div>

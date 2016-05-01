@@ -39,7 +39,11 @@ $id = $_GET['id'];
 	<link rel="stylesheet" type="text/css" href="css/liga.css">
 </head>
 <body background="img/fieldbg.jpg">
-	
+				<?php
+
+				include("include/menu.php");
+
+				?>	
 
 
 	<div class="container margin-t">
@@ -54,11 +58,7 @@ $id = $_GET['id'];
 			<div class="col-md-4 col-md-offset-4 admin-team">
 						  <!-- Navbar
 		    ================================================== -->
-				<?php
 
-				include("include/menu.php");
-
-				?>
 				<center><h2 style="color: orange;">JUGADORES</h2></center>
 				
 					<center>
@@ -67,11 +67,11 @@ $id = $_GET['id'];
 							
 							<tr>
 								
-								<th>Nombre</th>
-								<th>Apodo</th>
-								<th>Rut</th>
-								<th>Posicion</th>
-								<th>Imagen</th>
+								<th style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">Nombre</th>
+								<th style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">Apodo</th>
+								<th style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">Rut</th>
+								<th style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">Posicion</th>
+								<th style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;">Imagen</th>
 								
 							</tr>
 						</thead>
@@ -91,11 +91,11 @@ $id = $_GET['id'];
 							?>
 								<tr>
 									
-									<td><?php echo $row['NOMBRE'];?></td>
-									<td><?php echo $row['APODO'];?></td>
-									<td><?php echo $row['RUT'];?></td>
-									<td><?php echo $row['POSICIONJUGADOR'];?></td>
-									<td><img height="100" width="100" src="data:image/jpg;base64,<?php echo base64_encode($row['IMAGEN']); ?>" ></td>
+									<td style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;"><?php echo $row['NOMBRE'];?></td>
+									<td style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;"><?php echo $row['APODO'];?></td>
+									<td style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;"><?php echo $row['RUT'];?></td>
+									<td style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;"><?php echo $row['POSICIONJUGADOR'];?></td>
+									<td style="font-size: 14px; color: orange; font-family: 'Montserrat', sans-serif;"><img height="100" width="100" src="data:image/jpg;base64,<?php echo base64_encode($row['IMAGEN']); ?>" ></td>
 									<!--<th><a href="borrar_jugador.php">Eliminar</a></th>-->
 
 								</tr>
