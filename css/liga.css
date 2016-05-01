@@ -285,6 +285,10 @@ input:enabled {
   color: orange !important;
 }
 
+.crear-equipos {
+  margin-top: 200px;
+}
+
 @media (max-width: 767px) {
   .navbar-default .bg-nav .navbar-right li {
     z-index: 10 !important;
