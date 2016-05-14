@@ -105,8 +105,6 @@ body {
 
 .navbar-default ul {
   margin-top: 35px !important;
-  border-bottom: 3px solid orange !important;
-  border-top: 3px solid orange !important;
 }
 
 .navbar-default ul li a {
