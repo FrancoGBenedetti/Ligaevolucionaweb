@@ -1,18 +1,14 @@
 * {
   font-family: 'Montserrat', sans-serif;
+  box-sizing: border-box;
 }
 
 body {
   background-color: #FF0033;
 }
 
-td {
-  padding: 15px;
-  text-align: center;
-}
-th {
-  padding: 15px;
-  text-align: center;
+.head {
+  margin-bottom: 10px;
 }
 
 .head img {
@@ -101,16 +97,16 @@ th {
   color: white !important;
 }
 
-header {
-  height: 50px;
-}
-
 .navbar-default {
   background-color: rgba(200, 200, 200, 0) !important;
-  border: 0px;
+  margin-top: 20px;
   border-color: transparent !important;
-  margin-bottom: 0px !important;
-  height: 50px;
+}
+
+.navbar-default ul {
+  margin-top: 35px !important;
+  border-bottom: 3px solid orange !important;
+  border-top: 3px solid orange !important;
 }
 
 .navbar-default ul li a {
@@ -123,8 +119,8 @@ header {
   border-bottom: 3px solid #DF2C41;
 }
 
-.navbar {
-  height: 100px;
+.carousel {
+  padding: 0px !important;
 }
 
 .carousel-control.right {
@@ -135,6 +131,7 @@ header {
 }
 
 .carousel-control.left {
+  left: 15px !important;
   background-image: -webkit-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, transparent 100%) !important;
   background-image: -o-linear-gradient(left, rgba(0, 0, 0, 0.0001) 0, transparent 100%) !important;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(0, 0, 0, 0.0001)), to(transparent)) !important;
@@ -197,15 +194,29 @@ header {
   color: orange;
 }
 
+.banner-promo {
+  padding-right: 0px !important;
+  text-align: right;
+}
+
+.banner-promo img {
+  width: 162px !important;
+}
+
 .auspiciadores {
   margin-top: 30px;
-  background-color: #070707;
-  padding: 20px;
-  border: 7px solid white;
+  background-color: rgba(255, 255, 255, 0.37);
+  padding: 10px;
+  text-align: center;
 }
 
 .auspiciadores .logo-auspicios {
   margin-left: 20px;
+}
+
+.auspiciadores .logo-auspicios p {
+  color: orange;
+  margin-top: 5px;
 }
 
 .auspiciadores figure {
@@ -213,7 +224,27 @@ header {
 }
 
 .auspiciadores figure img {
-  width: 170px;
+  width: 130px;
+}
+
+.fixture h4 {
+  color: white;
+  margin: 0px !important;
+  border-bottom: 2px solid orange;
+}
+
+.video iframe {
+  width: 570px;
+  height: 406px;
+}
+
+.video h4 {
+  font-weight: lighter;
+  padding: 5px;
+  text-align: center;
+  font-size: 20px;
+  background-color: rgba(255, 255, 255, 0.37);
+  color: white;
 }
 
 label {
@@ -290,6 +321,18 @@ input:enabled {
   border: thin #C1C1C1;
 }
 
+.about-us h3 {
+  color: orange;
+  font-size: 20px;
+  padding: 10px;
+  border-bottom: 2px solid orange;
+  margin-bottom: 20px;
+}
+
+.about-us p {
+  color: orange;
+}
+
 .tit h2 {
   color: orange !important;
 }
@@ -305,6 +348,31 @@ input:enabled {
   color: orange;
   font-size: 14px;
   border-bottom: 2px solid orange;
+}
+
+.inscripcion-container {
+  color: orange;
+  margin-top: 50px;
+  text-align: center;
+}
+
+.inscripcion-container h3 {
+  margin-bottom: 30px;
+}
+
+.inscripcion-container .btn-xcel {
+  background-color: #0B750B;
+  display: inline-block;
+  -webkit-box-shadow: 4px 4px 3px black;
+  -moz-box-shadow: 4px 4px 3px black;
+  box-shadow: 4px 4px 3px black;
+  margin-top: 30px;
+}
+
+.inscripcion-container .btn-xcel i {
+  padding: 30px;
+  color: white;
+  font-size: 40px;
 }
 
 @media (max-width: 767px) {
